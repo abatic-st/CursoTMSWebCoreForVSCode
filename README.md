@@ -1,5 +1,5 @@
 # CursoTMSWebCoreForVSCode
-Repositorio para alojar los proyectos (API y APP) del curso de TMS Web Core para Visual Studio Code
+Repositorio para alojar los proyectos (API y APP) del [curso de TMS Web Core para Visual Studio Code](https://www.abatic.net/courses/tms-web-core-para-visual-studio-code/)
 
 ## Carpetas
 
