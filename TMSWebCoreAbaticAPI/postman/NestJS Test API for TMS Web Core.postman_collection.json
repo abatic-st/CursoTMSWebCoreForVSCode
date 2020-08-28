@@ -1,0 +1,356 @@
+{
+	"info": {
+		"_postman_id": "fc3e616e-d6ee-46f7-bcd9-1f196bf89706",
+		"name": "NestJS Test API for TMS Web Core",
+		"description": "API REST for test NestJS Rest API from TMS Web Core For Visual Studio Code.",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "User",
+			"item": [
+				{
+					"name": "New User",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"email\":\"amador@abatic.es\",\r\n    \"password\":\"TMSWebCoreWithAbatic\",\r\n    \"name\": \"Amador\"\r\n}"
+						},
+						"url": {
+							"raw": "http://localhost:3000/users/appendUser",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"users",
+								"appendUser"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "SignIn",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"email\":\"amador@abatic.es\",\r\n    \"password\":\"TMSWebCoreWithAbatic\"\r\n}"
+						},
+						"url": {
+							"raw": "http://localhost:3000/auth/signin",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"auth",
+								"signin"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "New User 2",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"email\":\"emilio@abatic.es\",\r\n    \"password\":\"TMSWebCoreWithAbatic\",\r\n    \"name\": \"Emilio\"\r\n}"
+						},
+						"url": {
+							"raw": "http://localhost:3000/users/appendUser",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"users",
+								"appendUser"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "SignIn 2",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"email\":\"emilio@abatic.es\",\r\n    \"password\":\"TMSWebCoreWithAbatic\"\r\n}"
+						},
+						"url": {
+							"raw": "http://localhost:3000/auth/signin",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"auth",
+								"signin"
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"protocolProfileBehavior": {}
+		},
+		{
+			"name": "Wish",
+			"item": [
+				{
+					"name": "Get Wish List (All)",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6IkFtYWRvciIsImVtYWlsIjoiYW1hZG9yQGFiYXRpYy5lcyIsImlhdCI6MTU5ODIxNDYwNCwiZXhwIjoxNTk4MjE4MjA0fQ.hiaHlOZE_1YZr_bpI-bPiueuUGuGMFPgcH2Yz7XhYR4",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "http://localhost:3000/wishlist",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"wishlist"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "New Wish",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6IkFtYWRvciIsImVtYWlsIjoiYW1hZG9yQGFiYXRpYy5lcyIsImlhdCI6MTU5ODIxMTczMCwiZXhwIjoxNTk4MjE1MzMwfQ.7g9cUDmapyIHZ8lZezKKe7_g_8WbxkTcYAaeef0eSf4",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"wishname\":\"TMS Web Core for Visual Studio Code\",\r\n    \"wishdescription\": \"TMS Web Core for Visual Studio Code is a utils to create web applications.\",\r\n    \"wishgot\": false\r\n}"
+						},
+						"url": {
+							"raw": "http://localhost:3000/wishlist/appendWish",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"wishlist",
+								"appendWish"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Update Wish",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6IkFtYWRvciIsImVtYWlsIjoiYW1hZG9yQGFiYXRpYy5lcyIsImlhdCI6MTU5ODIxNDczMywiZXhwIjoxNTk4MjE4MzMzfQ.yvwCys-S2idgiHZUHxxNUc9-gkz-R_WL7x8s_4Uw6CQ",
+									"type": "string"
+								}
+							]
+						},
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"wishurl\":\"tmssoftware.com\"\r\n}"
+						},
+						"url": {
+							"raw": "http://localhost:3000/wishlist/2",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"wishlist",
+								"2"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete Wish",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6IkFtYWRvciIsImVtYWlsIjoiYW1hZG9yQGFiYXRpYy5lcyIsImlhdCI6MTU5ODIxNDczMywiZXhwIjoxNTk4MjE4MzMzfQ.yvwCys-S2idgiHZUHxxNUc9-gkz-R_WL7x8s_4Uw6CQ",
+									"type": "string"
+								}
+							]
+						},
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "http://localhost:3000/wishlist/2",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"wishlist",
+								"2"
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"protocolProfileBehavior": {}
+		}
+	],
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"id": "6d39ebb1-4539-4db9-a7a0-4ddd5c2937de",
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"id": "71fbc5b8-b3e0-432a-9de3-859e86f6b9a9",
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		}
+	],
+	"protocolProfileBehavior": {}
+}
